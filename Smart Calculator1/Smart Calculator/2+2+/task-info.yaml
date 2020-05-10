@@ -31,6 +31,12 @@ files:
     if __name__ == '__main__':
         CalcTest("calculator.calculator").run_tests()
   learner_created: false
+- name: calculator/calculator.py
+  visible: true
+  text: |-
+    # write your code here
+    print(sum(map(int,input().split())))
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/74/stages/410/implement
-status: Unchecked
-record: -1
+status: Solved
+record: 2
