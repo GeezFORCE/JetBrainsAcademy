@@ -4,8 +4,10 @@ while True:
     if inp == "/exit":
         print("Bye!")
         exit()
+    elif inp == "/help":
+        print("The program calculates the sum of numbers")
     else:
-        num = list(map(int, inp.split()))
+        num = [int(i) for i in inp.split()]
         if len(num) == 0:
             continue
         else:

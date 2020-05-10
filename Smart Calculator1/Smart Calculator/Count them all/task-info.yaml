@@ -32,6 +32,22 @@ files:
     if __name__ == '__main__':
         CalcTest("calculator.calculator").run_tests()
   learner_created: false
+- name: calculator/calculator.py
+  visible: true
+  text: |-
+    # write your code here
+    while True:
+        inp = input()
+        if inp == "/exit":
+            print("Bye!")
+            exit()
+        else:
+            num = list(map(int, inp.split()))
+            if len(num) == 0:
+                continue
+            else:
+                print(sum(num))
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/74/stages/411/implement
-status: Unchecked
+status: Solved
 record: -1
